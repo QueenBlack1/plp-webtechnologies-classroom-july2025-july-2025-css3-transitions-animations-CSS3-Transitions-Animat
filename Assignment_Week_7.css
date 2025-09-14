@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.fancy-btn {
+  background: #0077ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.5s;
+}
+.hover-button {
+  background-color: #007BFF; /* Initial background color */
+  color: white; /* Initial text color */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+}
+
+.hover-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  color: #f0f0f0; /* Slightly different text color on hover */
+}
+.hover-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  color: #f0f0f0; /* Slightly different text color on hover */
+}
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 20px auto;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.box-to-animate {
+  width: 100px;
+  height: 100px;
+  background: #9e1515;
+  margin: 20px auto;
+}
+
+.box-to-animate.animate {
+  animation: slideIn 5s forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-200px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
